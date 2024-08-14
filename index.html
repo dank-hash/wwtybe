@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <title>THE PLUG LINKS</title>
+  <meta name="robots" content="noindex">
+<meta name="description" content="The PLUG IS BACK!">
+<script>
+    const text = document.getElementById('welcome');
+const colors = ['#870000', '#ff4d00', '#ffbb00', '#00e600', '#002aff', '#5c00b3', '#870000'];
+let currentColorIndex = 0;
+
+function changeColor() {
+  text.style.setProperty('--gradient-color', colors[currentColorIndex]);
+  currentColorIndex = (currentColorIndex + 1) % colors.length;
+}
+
+setInterval(changeColor, 1000);
+</script>
+  <script src="https://kit.fontawesome.com/6bee25835f.js" crossorigin="anonymous"></script>
+  <script>
+    // Show message if not on a mobile device
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      document.addEventListener('DOMContentLoaded', function() {
+        var nonMobileMessage = document.getElementById('non-mobile-message');
+        nonMobileMessage.style.display = 'block';
+      });
+    }
+
+  </script>
+  <link rel="icon" href="/gamebreak.jpg" type="image/x-icon"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+</head>
+
+<style media="screen">
+    .non-mobile-message {
+      display: none;
+      text-align: center;
+      font-size: 24px;
+      padding: 20px;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+:root {
+    --textColor: black;
+    --font: 'Karla', sans-serif;
+}
+
+html {
+  font-family: var(--font);
+  color: var(--textColor);
+  font-size: 18px;
+  font-weight: 400;
+  background: url('https://i.redd.it/x4hnwsvps4h91.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: -50px auto;
+  border-radius: 100%;
+}
+
+main {
+  width: 100%;
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 0 15px;
+}
+
+a {
+  color: var(--textColor);
+  text-decoration: none;
+  text-align: center;
+  font-weight: 800;
+  border: 4px solid var(--textColor);
+  border-radius: 10px;
+  background-color: white;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.link-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.description {
+    font-weight: bold;
+    font-weight: 800;
+  overflow: hidden;
+
+  background: url('https://as1.ftcdn.net/v2/jpg/06/55/71/68/1000_F_655716825_TsGM3OjbHByqf1T7luh0IOCgCiAZG28I.jpg');
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flowAnimation 3s linear infinite;
+  animation-delay: s;
+}
+
+@keyframes flowAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.description, .welcome, .social {
+      font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.welcome {
+  font-size: 23px;
+  display: inline;
+  width: auto;
+}
+
+.greetingContainer {
+
+      border: 4px solid var(--textColor);
+      border-radius: 10px;
+      background-color: gray;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+  
+  .image {
+    max-width: px;
+  }
+  
+  .linksss {
+      margin-right: 90px;
+      margin-left: 10px;
+  }
+}
+
+
+</style>
+
+<body>
+  <img class="image" src="./images/plug.png" alt="Profile Picture">
+
+ <div class="greetingContainer">
+  <p id="userName"></p>
+  <p class="description">Welcome!<br></p>
+  <p class="welcome"><b>Designed, built and managed by: </b></p>
+  <p class="social"><i class="fa-brands fa-square-snapchat"></i><b>PERK-FIEND</b></p>
+  <p2 id="descdesc"></p2>
+ </div>
+
+  <main>
+    <div class="linksss">
+    <a href="./pageauthentication/index.html" target="_blank">
+      <i class="fa-solid fa-money-check-dollar">&nbsp;</i> Fake and NOT REAL menu
+    </a>
+    <a href="/website/index.php" target="_blank">
+      <i class="fa-solid fa-x">&nbsp;</i> SIGN UP FOR MY NEW WEBSITE! New menu will soon be here.
+    </a>
+    <a href="/forums/" target="_blank">
+      <i class="fa-solid fa-x">&nbsp;</i> Anonymous Posts (Beta)
+    </a>
+    <a href="" target="_blank">
+      <i class="fa-solid fa-x">&nbsp;</i> COMING SOON
+    </a>
+    <a href="" target="_blank">
+      <i class="fa-solid fa-x">&nbsp;</i> COMING SOON
+    </a>
+    </div>
+  </main>
+
+</body>
+
+</html>
+
+
